@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>multi: Go Coverage Report</title>
+		<title>logger: Go Coverage Report</title>
 		<style>
 			body {
 				background: black;
@@ -55,7 +55,7 @@
 			<div id="nav">
 				<select id="files">
 				
-				<option value="file0">github.com/microlib/logger/pkg/multi/logger.go (87.0%)</option>
+				<option value="file0">github.com/microlib/logger/logger.go (100.0%)</option>
 				
 				</select>
 			</div>
@@ -144,8 +144,8 @@ func (logger Logger) Error(message string) <span class="cov8" title="1">{
         log.Printf(logger.Colors.Red, "ERROR", message)
 }</span>
 
-func (logger Logger) Warn(message string) <span class="cov0" title="0">{
-        if logger.Level == WARN || logger.Level == DEBUG || logger.Level == INFO || logger.Level == TRACE </span><span class="cov0" title="0">{
+func (logger Logger) Warn(message string) <span class="cov8" title="1">{
+        if logger.Level == WARN || logger.Level == DEBUG || logger.Level == INFO || logger.Level == TRACE </span><span class="cov8" title="1">{
                 log.Printf(logger.Colors.Yellow, "WARN", message)
         }</span>
 }
@@ -170,7 +170,7 @@ func (logger Logger) Debugf(msg string, val ...interface{}) <span class="cov8" t
         logger.Debug(fmt.Sprintf(msg, val...))
 }</span>
 
-func (logger Logger) Warnf(msg string, val ...interface{}) <span class="cov0" title="0">{
+func (logger Logger) Warnf(msg string, val ...interface{}) <span class="cov8" title="1">{
         logger.Warn(fmt.Sprintf(msg, val...))
 }</span>
 

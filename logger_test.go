@@ -21,10 +21,12 @@ func TestAll(t *testing.T) {
 		l.Debug("Log Debug")
 		l.Trace("Log Trace")
 		l.Error("Log Error")
+		l.Warn("Log Warn")
 		l.Infof("Log Info %s", "test")
 		l.Debugf("Log Debug %s", "test")
 		l.Tracef("Log Trace %s", "test")
 		l.Errorf("Log Error %s", "test")
+		l.Warnf("Log Warn %s", "test")
 
 		// with terminal color
 		l = NewLogger(COLOR, TRACE)
@@ -32,10 +34,12 @@ func TestAll(t *testing.T) {
 		l.Debug("Log Debug")
 		l.Trace("Log Trace")
 		l.Error("Log Error")
+		l.Warn("Log Warn")
 		l.Infof("Log Info %s", "test")
 		l.Debugf("Log Debug %s", "test")
 		l.Tracef("Log Trace %s", "test")
 		l.Errorf("Log Error %s", "test")
+		l.Warnf("Log Warn %s", "test")
 
 		// with html decoration
 		l = NewLogger(HTML, TRACE)
@@ -43,10 +47,12 @@ func TestAll(t *testing.T) {
 		l.Debug("Log Debug")
 		l.Trace("Log Trace")
 		l.Error("Log Error")
+		l.Warn("Log Warn")
 		l.Infof("Log Info %s", "test")
 		l.Debugf("Log Debug %s", "test")
 		l.Tracef("Log Trace %s", "test")
 		l.Errorf("Log Error %s", "test")
+		l.Warnf("Log Warn %s", "test")
 
 	})
 }
